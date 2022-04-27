@@ -15,7 +15,6 @@
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
-		font-weight: 300;
 		text-transform: uppercase;
 		font-size: rem(16);
 		line-height: 2;
@@ -38,7 +37,7 @@
 	&__item {
 		color: $mainColor;
 		font-size: rem(20);
-		font-weight: 600;
+		font-weight: 700;
 		text-transform: uppercase;
 		cursor: pointer;
 		transition: all 0.3s ease;
@@ -46,17 +45,16 @@
 		@media (any-hover: hover) {
 			&:hover {
 				background: $mainColor;
+				.main-page__link {
+					color: #ffffff;
+				}
 			}
 		}
 	}
 	// .main-page__link
 	&__link {
+		color: $mainColor;
 		transition: all 0.3s ease;
-		@media (any-hover: hover) {
-			&:hover {
-				color: #ffffff;
-			}
-		}
 	}
 	// .main-page__scrolldown
 	&__scrolldown {
@@ -107,7 +105,7 @@
 		padding: rem(40) rem(180) rem(40) rem(30);
 		& span {
 			font-size: rem(20);
-			font-weight: 600;
+			font-weight: 700;
 			text-transform: uppercase;
 			border-bottom: rem(3) solid $mainColor;
 			padding-bottom: rem(5);
