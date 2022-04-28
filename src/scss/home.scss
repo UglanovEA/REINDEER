@@ -1,7 +1,7 @@
 .main-page {
 	// .main-page__nav
 	&__nav {
-		width: rem(200);
+		width: rem(300);
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
@@ -16,11 +16,8 @@
 		justify-content: center;
 		text-align: center;
 		text-transform: uppercase;
-		font-size: rem(16);
-		line-height: 2;
 		& span {
-			font-size: rem(60);
-			line-height: 1;
+			font-size: rem(70);
 		}
 	}
 	// .main-page__items
@@ -31,12 +28,12 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		text-align: right;
-		padding-top: rem(50);
+		padding-top: rem(60);
 	}
 	// .main-page__item
 	&__item {
 		color: $mainColor;
-		font-size: rem(20);
+		font-size: rem(28);
 		font-weight: 700;
 		text-transform: uppercase;
 		cursor: pointer;
@@ -62,8 +59,8 @@
 		display: flex;
 		justify-content: center;
 		transform: rotate(-90deg);
-		padding-top: rem(50);
-		font-size: rem(22);
+		padding-top: rem(70);
+		font-size: rem(26);
 		font-weight: 700;
 		&::before {
 			content: "";
@@ -71,7 +68,7 @@
 			border-top: rem(1) solid #000000;
 			width: rem(65);
 			margin-right: rem(10);
-			transform: translateY(12.5px);
+			transform: translateY(16px);
 		}
 	}
 }
@@ -81,14 +78,15 @@
 	&__texts {
 		position: absolute;
 		top: 25%;
-		right: rem(180);
+		right: rem(350);
 		transform: translateY(-50%);
 		text-align: right;
 		color: $mainColor;
+		z-index: 2;
 	}
 	// .main-page__title
 	&__title {
-		font-size: rem(150);
+		font-size: rem(180);
 	}
 	// .main-page__text
 	&__text {
@@ -107,7 +105,7 @@
 		column-gap: rem(20);
 		padding: rem(40) rem(180) rem(40) rem(30);
 		& span {
-			font-size: rem(20);
+			font-size: rem(28);
 			font-weight: 700;
 			text-transform: uppercase;
 			border-bottom: rem(3) solid $mainColor;
@@ -136,7 +134,6 @@
 			align-items: center;
 			justify-content: center;
 			color: $mainColor;
-			font-size: rem(20);
 			padding: rem(20);
 			cursor: pointer;
 			border-radius: 50%;
@@ -218,7 +215,7 @@
 		bottom: rem(150);
 		right: rem(160);
 		& span {
-			left: rem(-130);
+			left: rem(-150);
 		}
 	}
 	&__circle-circle-1,
@@ -238,7 +235,6 @@
 			position: absolute;
 			top: rem(25);
 			width: rem(100);
-			font-size: rem(20);
 		}
 	}
 	&__circle-circle-1,
@@ -292,6 +288,6 @@
 	// .overlay__subtitle
 	&__subtitle {
 		font-size: rem(30);
-		letter-spacing: 3px;
+		letter-spacing: rem(3);
 	}
 }
