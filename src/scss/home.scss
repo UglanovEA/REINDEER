@@ -146,3 +146,121 @@
 		}
 	}
 }
+/*-------------ELLIPSES--------------------*/
+.main-page {
+	// .main-page__ellipses
+	&__ellipses {
+		width: rem(750);
+		height: rem(750);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		margin: 0 auto;
+	}
+}
+.ellipse {
+	position: absolute;
+	top: 0;
+	border-radius: 50%;
+	border-style: solid;
+	// .ellipse__thin
+	&__thin {
+		width: 100%;
+		height: 100%;
+		border-width: rem(1);
+		border-color: $mainColor;
+		opacity: 0.5;
+	}
+	// .ellipse__thick
+	&__thick {
+		width: 93%;
+		height: 93%;
+		border-width: rem(10);
+		border-color: #ffffff;
+		transform: rotate(-45deg);
+		top: rem(24);
+		left: rem(24);
+	}
+	// .ellipse__yellow
+	&__yellow {
+		width: 93%;
+		height: 93%;
+		border-width: rem(10);
+		border-color: $yellowColor transparent;
+		transform: rotate(-45deg);
+		top: rem(24);
+		left: rem(24);
+		animation: ellipseRotate 15s ease-in-out infinite;
+	}
+	// .ellipse__circle
+	&__circle {
+		position: absolute;
+		width: rem(64);
+		height: rem(64);
+		border: rem(1) solid $mainColor;
+		border-radius: 50%;
+	}
+	// .ellipse__circle-circle-1
+	&__circle-circle-1 {
+		top: rem(150);
+		left: rem(175);
+		& span {
+			left: rem(75);
+		}
+	}
+	// .ellipse__circle-circle-2
+	&__circle-circle-2 {
+		bottom: rem(150);
+		right: rem(160);
+		& span {
+			left: rem(-130);
+		}
+	}
+	&__circle-circle-1,
+	&__circle-circle-2 {
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			display: inline-block;
+			border-radius: 50%;
+		}
+		& span {
+			white-space: nowrap;
+			position: absolute;
+			top: rem(25);
+			width: rem(100);
+			font-size: rem(20);
+		}
+	}
+	&__circle-circle-1,
+	&__circle-circle-2 {
+		&::before {
+			width: rem(12);
+			height: rem(12);
+			background: #ffffff;
+			z-index: 1;
+		}
+	}
+	&__circle-circle-1,
+	&__circle-circle-2 {
+		&::after {
+			width: rem(40);
+			height: rem(40);
+			background: $yellowColor;
+		}
+	}
+}
+@keyframes ellipseRotate {
+	0% {
+		transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(-405deg);
+	}
+}
