@@ -85,7 +85,7 @@
         opacity: 0,
         x: 200
     });
-    gsap.from(".main-page__media span", 1, {
+    gsap.from(".main-page__media div", 1, {
         delay: 3,
         opacity: 0,
         y: 200,
