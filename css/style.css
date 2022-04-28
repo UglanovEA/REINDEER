@@ -137,7 +137,7 @@ h6 {
 }
 
 .no-webp .wrapper{
-  background: url("../img/reindeer.png") no-repeat center/cover; }
+  background: url("../img/reindeer.png") center/cover no-repeat; }
 
 .wrapper {
   font-weight: 400;
@@ -352,7 +352,7 @@ h6 {
   padding: 1.25rem;
 }
 
-.main-page__media span {
+.main-page__media div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 3.75rem;
           flex: 0 0 3.75rem;
@@ -561,9 +561,9 @@ h6 {
     color: #ffffff;
   }
 
-  .main-page__media span:hover {
+  .main-page__media div:hover {
     background: #ffeb00;
   }
 }
 
-.webp .wrapper{ background: url(../img/reindeer.webp) no-repeat center/cover; }
+.webp .wrapper{ background: url(../img/reindeer.webp) center/cover no-repeat; }
