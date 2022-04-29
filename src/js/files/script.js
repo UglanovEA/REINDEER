@@ -85,7 +85,7 @@ gsap.from(".main-page__watchnow", 1, {
 });
 
 gsap.from(
-	".main-page__media span",
+	".main-page__media div",
 	1,
 	{
 		delay: 3,

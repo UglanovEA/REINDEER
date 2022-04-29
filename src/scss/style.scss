@@ -65,9 +65,7 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	background: url("../img/reindeer.png") no-repeat;
-	background-position: center;
-	background-size: cover;
+	background: url("../img/reindeer.png") center/cover no-repeat;
 	overflow: hidden;
 }
 // Ограничивающий контейнер ======================================================================================================================================================================================================================

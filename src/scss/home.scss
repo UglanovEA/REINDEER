@@ -128,8 +128,9 @@
 		display: flex;
 		column-gap: rem(10);
 		padding: rem(20);
-		& span {
-			flex: 0 0 rem(60);
+		& div {
+			height: rem(60);
+			flex: 0 0 rem(64);
 			display: flex;
 			align-items: center;
 			justify-content: center;
