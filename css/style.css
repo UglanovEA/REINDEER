@@ -353,9 +353,10 @@ h6 {
 }
 
 .main-page__media div {
+  height: 3.75rem;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 3.75rem;
-          flex: 0 0 3.75rem;
+      -ms-flex: 0 0 4rem;
+          flex: 0 0 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
